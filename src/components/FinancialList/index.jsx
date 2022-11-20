@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FilterButton } from "./FilterButton";
 import { FinancialListCard } from "./FinancialListCard";
-import noCard from '../../assets/NoCard.svg'
+import noCard from "../../assets/NoCard.svg";
 
 import "./style.css";
 
@@ -18,9 +18,9 @@ export const FinancialList = ({
       return (
         <div className="noCard">
           <h2>Você não possui nenhuma transação</h2>
-          <img src={noCard} alt=""/>
+          <img src={noCard} alt="" />
         </div>
-      )
+      );
     }
     return transactionsList.map((transaction, index) => (
       <FinancialListCard
@@ -50,9 +50,7 @@ export const FinancialList = ({
         </div>
       </header>
 
-      <ul>
-        {hasTransactions()}
-      </ul>
+      <ul>{hasTransactions()}</ul>
     </div>
   );
 };

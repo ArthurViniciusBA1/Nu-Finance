@@ -17,7 +17,7 @@ export const Home = ({ setPagina }) => {
 
   function removeTransaction(id) {
     let newList = transactions.filter((transac) => transac.id !== id);
-    setTransactions(newList)
+    setTransactions(newList);
   }
 
   const filtered = () => {

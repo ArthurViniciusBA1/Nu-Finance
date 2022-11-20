@@ -1,7 +1,6 @@
-import './style.css'
+import "./style.css";
 
 export const SpanSaldo = ({ saldo }) => {
-  
   if (saldo < 0) {
     return <span className="balanceNegative">R$ {saldo}</span>;
   }

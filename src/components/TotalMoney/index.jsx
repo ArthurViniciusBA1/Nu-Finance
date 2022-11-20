@@ -1,8 +1,7 @@
 import "./style.css";
-import { SpanSaldo } from './Saldo'
+import { SpanSaldo } from "./Saldo";
 
 export const TotalMoney = ({ transacoes }) => {
-  
   let saldo = transacoes.reduce((total, transacao) => {
     switch (transacao.type) {
       case "Saida":
@@ -14,9 +13,9 @@ export const TotalMoney = ({ transacoes }) => {
 
   return (
     <div className="totalMoney">
-        <div>
-            Valor total: <SpanSaldo saldo={saldo}/>
-        </div>
+      <div>
+        Valor total: <SpanSaldo saldo={saldo} />
+      </div>
       <span>O valor se refere ao saldo</span>
     </div>
   );
