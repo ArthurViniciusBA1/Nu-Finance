@@ -1,0 +1,81 @@
+.financialForm {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding: 38px 25px;
+
+  border: 1px solid var(--gray2);
+  border-radius: 8px;
+}
+
+.financialForm label {
+  font-weight: 400;
+  font-size: 14px;
+
+  color: var(--gray4);
+}
+
+.financialForm > :nth-child(1) {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.financialForm > :nth-child(2) {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.financialForm > :nth-child(2) > :nth-child(1) {
+  position: relative;
+}
+
+.financialForm > :nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+#transactionValue {
+  padding: 0 30px 0 16px;
+
+  max-width: 60px;
+}
+
+#currency {
+  position: absolute;
+  bottom: 15px;
+  right: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  color: var(--gray3);
+
+  cursor: default;
+}
+
+@media (max-width: 1300px) {
+  .financialForm{
+    padding: 25px;
+  }
+
+  .financialForm > :nth-child(2) {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .financialForm > :nth-child(2) div {
+    width: 100%;
+  }
+
+  #transactionValue{
+    max-width: none;
+  }
+}

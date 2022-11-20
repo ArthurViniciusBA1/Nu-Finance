@@ -1,0 +1,7 @@
+.balanceNegative{
+    color: var(--primary1);
+}
+
+.balancePositive {
+    color: var(--secondary);
+}

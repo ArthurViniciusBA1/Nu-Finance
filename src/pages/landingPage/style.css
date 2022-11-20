@@ -1,0 +1,73 @@
+.landingPage {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--gray4);
+
+  gap: 5vw;
+}
+
+.left {
+  width: 200px;
+}
+
+.left > div {
+  display: flex;
+  gap: 25px;
+
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.left > div > p {
+  line-height: 125%;
+
+  color: var(--gray1);
+}
+
+.left > div > span {
+  color: var(--gray1);
+}
+
+@media (max-width: 900px) {
+  .left {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left > img{
+    height: 40px;
+  }
+
+  .left > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .left > div > p {
+    width: 280px;
+
+    font-size: 40px;
+  }
+
+  .left > div > span {
+    font-size: 20px;
+  }
+
+  .left > div > button {
+    width: 280px;
+  }
+
+  .right {
+    display: none;
+  }
+}

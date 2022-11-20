@@ -1,0 +1,38 @@
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.brandButton {
+  height: 48px;
+
+  background: var(--primary1);
+
+  border: 2px solid var(--primary1);
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 16px;
+
+  color: var(--gray1);
+}
+
+.brandButton:hover {
+  background: var(--primary2);
+}
+
+.lightButton {
+  background: var(--gray2);
+
+  border: 2px solid var(--gray2);
+  border-radius: 8px;
+
+  height: 40px;
+
+  padding: 0 15px;
+
+  font-weight: 600;
+  font-size: 14px;
+
+  color: var(--gray3);
+}

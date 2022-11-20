@@ -1,0 +1,83 @@
+.financialList {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+}
+
+.financialList > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.financialList > header > h2 {
+  font-weight: 700;
+  font-size: 16px;
+
+  color: var(--gray4);
+}
+
+.financialList > header > div {
+  display: flex;
+
+  gap: 15px;
+}
+
+.financialList > header > div > button {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 8px;
+
+  border: 2px solid transparent;
+}
+
+.buttonCommon:hover {
+  animation: rotatingBorder 2s ease;
+}
+
+.buttonHighlighted {
+  background: var(--primary1);
+  color: var(--gray1);
+}
+
+.buttonHighlighted:hover {
+  background: var(--primary2);
+}
+
+.financialList > ul {
+  margin-top: 25px;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.noCard > h2 {
+  font-weight: 700;
+  font-size: 22px;
+
+  color: var(--gray3);
+
+  margin-bottom: 20px;
+}
+
+@keyframes rotatingBorder {
+  0% {
+    border-bottom: 2px solid var(--gray4);
+  }
+  50% {
+    border-right: 2px solid var(--gray4);
+    border-left: 2px solid var(--gray4);
+    border-bottom: 2px solid var(--gray4);
+  }
+  100% {
+    border: 2px solid var(--gray4);
+  }
+}
