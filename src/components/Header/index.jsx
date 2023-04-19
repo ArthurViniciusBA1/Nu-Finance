@@ -1,4 +1,4 @@
-import logo from "../../assets/NuKenzieDark.svg";
+import logo from "../../assets/logoDark.png";
 
 import "./style.css";
 

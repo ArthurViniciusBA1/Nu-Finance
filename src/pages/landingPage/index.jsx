@@ -1,5 +1,5 @@
 import imagem from "../../assets/landingPage.svg";
-import logo from "../../assets/NuKenzie.svg";
+import logo from "../../assets/logoLight.png";
 
 import "./style.css";
 
