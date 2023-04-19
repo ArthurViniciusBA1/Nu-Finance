@@ -7,7 +7,7 @@ export const Landing = ({ setPagina }) => {
   return (
     <div className="landingPage">
       <div className="left">
-        <img src={logo} alt="" />
+        <img src={logo} alt="" className="logo" />
         <div>
           <p className="tittle1">Centralize o controle das suas finanças</p>
           <span>De forma rápida e segura</span>

@@ -1,7 +1,6 @@
-body{
+body {
   overflow-x: hidden;
 }
-
 
 .landingPage {
   display: flex;
@@ -40,6 +39,10 @@ body{
   color: var(--gray1);
 }
 
+.logo {
+  height: 30px;
+}
+
 @media (max-width: 900px) {
   .left {
     width: 90%;
@@ -49,7 +52,7 @@ body{
     justify-content: center;
   }
 
-  .left > img{
+  .left > img {
     height: 40px;
   }
 

@@ -23,8 +23,19 @@
   }
 }
 
+.logo{
+  height: 30px;
+}
+
+.headerButton:hover{
+  background-color: var(--primary1);
+  color: white;
+  font-weight: bold;
+
+}
+
 @media (max-width: 800px) {
-    .homePage > .header > div {
-        width: 90%;
-      }
+  .homePage > .header > div {
+    width: 90%;
   }
+}
